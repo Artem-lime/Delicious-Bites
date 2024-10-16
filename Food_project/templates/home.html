@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        body {
+            margin-top: 50px;
+        }
+        .features-dishes img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+    <link rel="stylesheet" href="/static/seeyuh.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Delicious Bites | Home</title>
+</head>
+<body>
+    {% include 'navigation.html' %}
+    <header>
+        <section class="hero">
+        <h1>Welcome to Delicious Bites</h1>
+        <p>Experience the taste of home-cooked meals</p>
+    </section>
+    </header>
+
+    <h2>Featured Dishes</h2>
+    <section class="container">
+        <div class="row">
+            <div class="col">
+                <div>
+                    <div style="width: 18rem;">
+                            <div class="features-dishes">
+                                <img src="https://img.spoonacular.com/recipes/951820-556x370.jpg" alt="e">
+                                <h3>Spotted Dick</h3>
+                                <p>Spotted Dick serves 6 and costs $1.09 per serving. Each portion provides 10g of protein, 31g of fat, and 623 calories, covering 15% of your daily vitamins and minerals. Ingredients include vegetable shortening, currants, cornstarch, and sugar. It takes about 2 hours and 10 minutes to prepare. </p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div style="width: 18rem;">
+                            <div class="features-dishes">
+                                <img src="https://img.spoonacular.com/recipes/908819-556x370.jpg" alt="e">
+                                <h3>Pizza</h3>
+                                <p>Pizzan is a Mediterranean, lacto-ovo vegetarian appetizer. Each serving provides 3g of protein, 4g of fat, and 93 calories, covering 4% of daily vitamin and mineral needs, at 27 cents per portion. The recipe, serving 26, includes chili flakes, pepper, sugar, and oil, and takes around 2 hours and 10 minutes to prepare</p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <div style="width: 18rem;">
+                            <div class="features-dishes">
+                                <img src="https://img.spoonacular.com/recipes/1812031-556x370.jpg" alt="e">
+                                <h3>Burger Bowl</h3>
+                                <p>Burger Bowl is a gluten-free, keto-friendly main dish that serves 4. Each portion provides 39g of protein, 53g of fat, and 717 calories, covering 45% of daily vitamins and minerals. The recipe costs $3.68 per serving and takes 25 minutes to prepare. Ingredients include romaine lettuce, pickles, and cherry tomatoes.</p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Delicious Bites | <a href="#">Privacy Policy</a></p>
+    </footer>
+
+</body>
+</html>

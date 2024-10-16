@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="/static/seeyuh.css">
+{% include 'navigation.html' %}
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <style>
+        .features-dishes img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+    <title>Delicious Bites</title>
+</head>
+<body>
+    {% include 'navigation.html' %}
+    <h2>Random Dishes</h2>
+    <section class="container">
+        <div class="row">
+            <div class="col">
+            <div>
+                <div class="card">
+                        <div class="features-dishes">
+                            <img src="{{ food1_image }}" alt="e">
+                            <h3>{{ food1_name }}</h3>
+                            <p>{{ food1_description | safe }}</p>
+                        </div>
+                </div>
+                </div>
+            </div>
+            <div class="col-4">
+            <div>
+                <div >
+                        <div class="features-dishes">
+                            <img src="{{ food2_image }}" alt="e">
+                            <h3>{{ food2_name }}</h3>
+                            <p>{{ food2_description | safe }}</p>
+                        </div>
+                </div>
+                </div>
+            </div>
+            <div class="col">
+            <div>
+                <div >
+                        <div class="features-dishes">
+                            <img src="{{ food3_image }}" alt="e">
+                            <h3>{{ food3_name }}</h3>
+                            <p>{{ food3_description | safe }}</p>
+                        </div>
+                </div>
+                </div>
+            </div>
+</body>
+</html>
